@@ -1,48 +1,40 @@
-# React + Vite
+# Game Catalogue
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Game Catalogue es una aplicación web desarrollada en React que permite a los usuarios explorar y descubrir juegos. Proporciona una interfaz interactiva para buscar juegos por género, realizar búsquedas específicas y obtener información detallada sobre cada juego.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://game-catalogue-iamsebas376.netlify.app/
 
+## Características
 
-***PASOS PARA CREAR EL PROYECTO DESDE 0***
-# Crea un nuevo proyecto Vite con React
-npx create-vite my-rick-and-morty-wiki --template react
+- **Exploración de Juegos**: Visualización de una amplia lista de juegos obtenidos de la API de RAWG.
+- **Filtrado por Género**: Posibilidad de filtrar juegos por género para una experiencia más personalizada.
+- **Búsqueda de Juegos**: Búsqueda por términos clave para encontrar juegos específicos.
+- **Tema Dinámico**: Cambio entre modos de tema claro y oscuro para una experiencia visual adaptable.
+- **Información Detallada**: Acceso a información detallada de cada juego, incluyendo puntuación, imágenes y detalles relevantes.
 
-# Ingresa al directorio del proyecto
-cd my-rick-and-morty-wiki
+## Tecnologías Utilizadas
 
-# Instala Bootstrap
-npm install bootstrap
+- **React**: Construcción de la interfaz de usuario.
+- **Axios**: Realización de peticiones a la API para obtener datos.
+- **Tailwind CSS**: Utilizado para la estilización y diseño de la aplicación.
+- **React Icons**: Integración de iconos en la interfaz.
 
+## Instalación
 
+1. Clona este repositorio: `git clone https://github.com/iamsebas376/game-catalogue.git`
+2. Accede al directorio del proyecto: `cd game-catalogue`
+3. Instala las dependencias: `npm install`
+4. Inicia la aplicación: `npm start`
+5. Abre el navegador y accede a `http://localhost:3000`
 
-***Crea los siguientes componentes en el directorio src/components:***
+## Uso
 
-Card.js
-Pagination.js
-Search.js
-Filter.js
-Navbar.js
+- Al iniciar la aplicación, explora la lista de juegos disponibles.
+- Utiliza el filtro por género para ver juegos específicos.
+- Utiliza la barra de búsqueda para encontrar juegos por términos clave.
 
+## Autor
 
-
-***OJO***
-
-En el código proporcionado para el componente principal App.jsx, la llamada a la API se realiza dentro del useEffect. Aquí tienes una explicación detallada:
-<img width="1280" alt="Captura de Pantalla 2023-11-16 a la(s) 8 19 11 p m" src="https://github.com/wjulifajarb/APIREACT/assets/44068486/47962fdf-8e5e-4790-9a28-db45743e4399">
-
-
-<img width="772" alt="Captura de Pantalla 2023-11-16 a la(s) 8 19 33 p m" src="https://github.com/wjulifajarb/APIREACT/assets/44068486/8fafc446-ab3d-4f2f-ab9f-c8a40464420a">
-
-
-
-
-
-
-En el useEffect, se utiliza la función fetchData que realiza una llamada a la API de Rick and Morty. La URL de la API se construye utilizando el término de búsqueda (searchTerm) y el filtro (filter). Cuando estos valores cambian, la llamada a la API se vuelve a realizar.
-
-La función fetchData se ejecuta la primera vez que el componente se monta y luego cada vez que searchTerm o filter cambian, asegurando que los datos se actualicen según los criterios de búsqueda y filtro del usuario.
+- Desarrollado por `Sebastián Londoño Arboleda` https://github.com/iamsebas376
