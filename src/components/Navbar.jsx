@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import logo from "./../assets/images/navbar-logo.png";
 import { HiMoon, HiSun } from "react-icons/hi2";
-import { ThemeContext } from "../Context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import Search from "./Search";
 
 function Navbar({ setSearchTerm }) {

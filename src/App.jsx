@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { ThemeContext } from "./Context/ThemeContext";
+import { ThemeContext } from "./context/ThemeContext";
 import Filter from "./components/Filter";
 import GlobalApi from "./services/GlobalApi";
 import Banner from "./components/Banner";
